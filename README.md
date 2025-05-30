@@ -1,4 +1,6 @@
 # libds
+`libds` is a minimal and fast data structure library written in C.  
+Designed for system-level projects and educational use.
 
 ## Data Structures
 
@@ -11,3 +13,11 @@
     - void printq(queue *q);
 
 2. ...
+
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE).
+
+You are free to use, modify, and distribute this code with proper attribution.  
+See the LICENSE file for details.

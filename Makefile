@@ -19,12 +19,4 @@ clean:
 compile: $(SRC)
 	@mkdir -p $(BUILD_DIR)
 	$(CC) $(CFLAGS) -o $(BUILD_DIR)/$(BINARY) $(SRC)
-	@for file in $(SRC); do \
-		$(CC) $(CFLAGS) -c $$file -o $(BUILD_DIR)/`basename $$file .c`.o; \
-	done
-	ar rcs $(BUILD_DIR)/libkernel.a $(BUILD_DIR)/*.o
-	@echo "Compilation complete."
-	@for file in $(SRC); do \
-		$(CC) $(CFLAGS) -S $$file -o $(BUILD_DIR)/`basename $$file .c`.s; \
-	done
-	@echo "Generated assembly code."
+
